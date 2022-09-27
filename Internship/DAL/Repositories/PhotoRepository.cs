@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Internship.DAL.Repositories
 {
-    public class PhotoRepository : IPhotoRepository
+    public class PhotoRepository : BaseRepository<Photo>
     {
         readonly DbContext db;
-        public PhotoRepository(DbContext context)
+        public PhotoRepository(DbContext context) : base(context)
         {
             db = context;
         }

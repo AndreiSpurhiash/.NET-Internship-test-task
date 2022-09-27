@@ -12,5 +12,21 @@ namespace Internship.Domain.Entity
         public DateTime DateOfRegistration { get; set; }
         public ICollection<Photo> Photos { get; set; } = new List<Photo>();
         public ICollection<Text> Texts { get; set; } = new List<Text>();
+
+        public Author()
+        {
+                
+        }
+
+        public Author(string firstName, string lastName, string nickName,
+                      DateTime dateOfBirth, DateTime dateOfRegistration)
+        {
+            Id = Guid.NewGuid();
+            FirstName = firstName;
+            LastName = lastName;
+            NickName = nickName;
+            DateOfBirth = dateOfBirth;
+            DateOfRegistration = dateOfRegistration;
+        }
     }
 }

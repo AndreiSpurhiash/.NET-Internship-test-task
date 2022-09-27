@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Internship.Migrations
 {
-    public partial class entity : Migration
+    public partial class entityadd : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

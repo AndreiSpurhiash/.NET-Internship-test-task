@@ -1,5 +1,6 @@
 ﻿using Internship.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Internship.DAL
 {
@@ -59,6 +60,28 @@ namespace Internship.DAL
 
                 entity.HasOne(a => a.Author).WithMany(b => b.Texts).HasForeignKey(c => c.AuthorId).OnDelete(DeleteBehavior.Cascade);
             });
+
+            modelBuilder.Entity<Author>().HasData(
+                new Author[]
+                {
+                    new Author("Andrew", "Ivanov", "Pushkin", new DateTime(1994, 02, 03),
+                     new DateTime(2022, 03, 15)),
+                    new Author("Jhon", "Simons", "Simon", new DateTime(1975, 08, 12),
+                     new DateTime(2019, 10, 10)),
+                    new Author("Mike", "Luis", "Lu", new DateTime(1995, 11, 21),
+                     new DateTime(2021, 09, 19)),
+                    new Author("Piter", "Brown", "Pity", new DateTime(1989, 05, 12),
+                     new DateTime(2020, 07, 08)),
+                    new Author("Frenck", "Olsen", "Olsen", new DateTime(1979, 11, 25),
+                     new DateTime(2017, 11, 14)),
+                });
+
+            modelBuilder.Entity<Photo>().HasData(
+                new Photo[]
+                {
+                    new Photo("Colors", "ddddddddddddddd", new DateTime(2010, 02, 03), Author sim,
+                     100_000, 5, "100x100"),
+                });
         }
     }
 }

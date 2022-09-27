@@ -12,5 +12,15 @@ namespace Internship.Domain.Entity
         public Author Author { get; set; }
         public Guid AuthorId { get; set; }
         public int NumberOfSales { get; set; }
+
+        public Text(string name, string text, DateTime dateOfCreation, decimal coast, int numberOfSales)
+        {
+            Id = Guid.NewGuid();
+            Name = name;
+            this.text = text;
+            DateOfCreation = dateOfCreation;
+            Coast = coast;
+            NumberOfSales = numberOfSales;
+        }
     }
 }

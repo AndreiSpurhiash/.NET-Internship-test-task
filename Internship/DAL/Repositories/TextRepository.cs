@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Internship.DAL.Repositories
 {
-    public class TextRepository : ITextRepository
+    public class TextRepository : BaseRepository<Text>
     {
         readonly DbContext db;
-        public TextRepository(DbContext context)
+        public TextRepository(DbContext context) : base(context)
         {
             db = context;
         }

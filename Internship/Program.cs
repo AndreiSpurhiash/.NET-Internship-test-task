@@ -1,3 +1,5 @@
+﻿using Internship.Domain.Entity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

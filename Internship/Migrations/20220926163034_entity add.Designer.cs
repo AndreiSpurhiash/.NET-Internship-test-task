@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Internship.Migrations
 {
     [DbContext(typeof(PhotoStockContext))]
-    [Migration("20220926141214_entity")]
-    partial class entity
+    [Migration("20220926163034_entity add")]
+    partial class entityadd
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
