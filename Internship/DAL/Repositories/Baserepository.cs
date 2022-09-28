@@ -30,12 +30,6 @@ namespace Internship.DAL.Repositories
         {
             return db.Set<TEntity>().Find(id);
         }
-
-        public virtual async Task<IEnumerable<TEntity>> GetListAsync()
-        {
-            return await db.Set<TEntity>().ToListAsync().ConfigureAwait(false);
-        }
-
         public void Save()
         {
             db.SaveChanges();

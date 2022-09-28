@@ -11,14 +11,5 @@ namespace Internship.DAL.Repositories
         {
             db = context;
         }
-        public void Create(Text text)
-        {
-            db.Set<Text>().Add(text);
-        }
-
-        public void Save(Text text)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using Internship.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Internship.Migrations
 {
     [DbContext(typeof(PhotoStockContext))]
-    partial class PhotoStockContextModelSnapshot : ModelSnapshot
+    [Migration("20220928140054_entity2")]
+    partial class entity2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,7 +36,7 @@ namespace Internship.Migrations
                         .HasColumnName("DateOfBirth");
 
                     b.Property<DateTime>("DateOfRegistration")
-                        .HasColumnType("date")
+                        .HasColumnType("timestamp")
                         .HasColumnName("DateOfRegistration");
 
                     b.Property<string>("FirstName")
@@ -119,7 +121,7 @@ namespace Internship.Migrations
                         .HasColumnName("Coast");
 
                     b.Property<DateTime>("DateOfCreation")
-                        .HasColumnType("date")
+                        .HasColumnType("timestamp")
                         .HasColumnName("DateOfCreation");
 
                     b.Property<string>("Link")
@@ -155,7 +157,7 @@ namespace Internship.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("4a6651f6-247c-421b-b31e-7d2de9407c07"),
+                            Id = new Guid("6b2b6435-99a6-4cd1-b793-30386df7b651"),
                             AuthorId = new Guid("14d5363b-0889-4b3d-aaa7-f456d7b0f195"),
                             Coast = 100000m,
                             DateOfCreation = new DateTime(2010, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -167,7 +169,7 @@ namespace Internship.Migrations
                         },
                         new
                         {
-                            Id = new Guid("17a1d900-991a-4b0f-9635-17ee907d1e5e"),
+                            Id = new Guid("2440da2f-69d7-472c-b926-1de1a7b07d8a"),
                             AuthorId = new Guid("f51cccd8-4c11-4c96-aff3-24b1b4922de7"),
                             Coast = 200000m,
                             DateOfCreation = new DateTime(2015, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -179,7 +181,7 @@ namespace Internship.Migrations
                         },
                         new
                         {
-                            Id = new Guid("40ef80eb-4afb-4ad4-a011-db033c3a4684"),
+                            Id = new Guid("4d6ba9bb-f058-4066-b06e-34fc8953a2fb"),
                             AuthorId = new Guid("1395039e-c3d8-4afb-811e-6a69ab3245bd"),
                             Coast = 500000m,
                             DateOfCreation = new DateTime(2015, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -206,7 +208,7 @@ namespace Internship.Migrations
                         .HasColumnName("Coast");
 
                     b.Property<DateTime>("DateOfCreation")
-                        .HasColumnType("date")
+                        .HasColumnType("timestamp")
                         .HasColumnName("DateOfCreation");
 
                     b.Property<string>("Name")
@@ -233,7 +235,7 @@ namespace Internship.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6217cf4e-1a74-465d-bcb3-487ff4ecc2f7"),
+                            Id = new Guid("c60feef0-ab1f-4c55-a6ee-7db72c9a72de"),
                             AuthorId = new Guid("ac898bde-ecc6-43c1-8f4b-a0d54dc17d47"),
                             Coast = 10000m,
                             DateOfCreation = new DateTime(2017, 1, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -243,7 +245,7 @@ namespace Internship.Migrations
                         },
                         new
                         {
-                            Id = new Guid("bad5a440-4428-4ec2-822a-4a11d010e086"),
+                            Id = new Guid("a7cf62d8-cc35-46ac-b44b-1fd94916f88f"),
                             AuthorId = new Guid("b5f39d3b-4b8f-454b-8d20-a28be6271a40"),
                             Coast = 5000m,
                             DateOfCreation = new DateTime(2020, 9, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),

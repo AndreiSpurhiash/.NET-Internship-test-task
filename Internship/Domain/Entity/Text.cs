@@ -13,7 +13,8 @@ namespace Internship.Domain.Entity
         public Guid AuthorId { get; set; }
         public int NumberOfSales { get; set; }
 
-        public Text(string name, string text, DateTime dateOfCreation, decimal coast, int numberOfSales)
+        public Text(string name, string text, DateTime dateOfCreation, decimal coast,
+                    int numberOfSales, Guid authorId)
         {
             Id = Guid.NewGuid();
             Name = name;
@@ -21,6 +22,7 @@ namespace Internship.Domain.Entity
             DateOfCreation = dateOfCreation;
             Coast = coast;
             NumberOfSales = numberOfSales;
+            AuthorId = authorId;
         }
     }
 }

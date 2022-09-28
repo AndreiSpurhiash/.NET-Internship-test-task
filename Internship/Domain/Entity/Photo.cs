@@ -15,13 +15,13 @@ namespace Internship.Domain.Entity
         public double Raiting { get; set; }
         public string OriginalSize { get; set; }
 
-        public Photo(string name, string link, DateTime dateOfCreation, Author author,
+        public Photo(string name, string link, DateTime dateOfCreation, Guid authorId,
             decimal coast, int numberOfSales, string originalSize)
         {
             Id = Guid.NewGuid();
             Name = name;
             Link = link;
-            Author = author;
+            AuthorId = authorId;
             DateOfCreation = dateOfCreation;
             Coast = coast;
             NumberOfSales = numberOfSales;

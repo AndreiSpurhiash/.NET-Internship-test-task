@@ -13,15 +13,10 @@ namespace Internship.Domain.Entity
         public ICollection<Photo> Photos { get; set; } = new List<Photo>();
         public ICollection<Text> Texts { get; set; } = new List<Text>();
 
-        public Author()
-        {
-                
-        }
-
-        public Author(string firstName, string lastName, string nickName,
+        public Author(Guid id, string firstName, string lastName, string nickName,
                       DateTime dateOfBirth, DateTime dateOfRegistration)
         {
-            Id = Guid.NewGuid();
+            Id = id;
             FirstName = firstName;
             LastName = lastName;
             NickName = nickName;
