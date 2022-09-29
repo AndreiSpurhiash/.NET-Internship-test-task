@@ -1,4 +1,8 @@
-﻿using Internship.DAL.Repositories;
+﻿using AutoMapper;
+using Internship.Cotracts.Entity;
+using Internship.DAL.Repositories;
+using Internship.Domain.Entity;
+using Internship.Migrations;
 using Internship.Service.Entity;
 using Internship.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -7,18 +11,19 @@ namespace Internship.Service.Implementations
 {
     public class AuthorService : IAuthorService
     {
-        private readonly BaseRepository<Author> AuthorRepository;
-        private readonly DbContext _context;
-        public AuthorService()
-        {
-        }
+        readonly DbContext db;
 
-        public AuthorService(BaseRepository<Author> authorRepository)
+        private readonly IMapper _mapper;
+        private readonly AuthorRepository _authorRepository;
+
+        public AuthorService(IMapper mapper, AuthorRepository authorRepository)
         {
-            AuthorRepository = authorRepository;
+            _mapper = mapper;
+            _authorRepository = authorRepository;
         }
-        public async Task<IEnumerable<Author>> GetListAsync()
+        public IEnumerable<string> GetEntitiesList()
         {
-            var authors = await authorRepository.GetListAsync().ConfigureAwait(false);
+            return _authorRepository.GetEntitiesList();
         }
+    }
 }

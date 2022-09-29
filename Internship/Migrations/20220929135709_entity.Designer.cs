@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Internship.Migrations
 {
     [DbContext(typeof(PhotoStockContext))]
-    [Migration("20220928140326_2")]
-    partial class _2
+    [Migration("20220929135709_entity")]
+    partial class entity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -157,7 +157,7 @@ namespace Internship.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("4a6651f6-247c-421b-b31e-7d2de9407c07"),
+                            Id = new Guid("60386695-9fed-4807-981c-cb0b0c774b14"),
                             AuthorId = new Guid("14d5363b-0889-4b3d-aaa7-f456d7b0f195"),
                             Coast = 100000m,
                             DateOfCreation = new DateTime(2010, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -169,7 +169,7 @@ namespace Internship.Migrations
                         },
                         new
                         {
-                            Id = new Guid("17a1d900-991a-4b0f-9635-17ee907d1e5e"),
+                            Id = new Guid("8836d2cd-e88f-49fd-afab-f0947982d8d0"),
                             AuthorId = new Guid("f51cccd8-4c11-4c96-aff3-24b1b4922de7"),
                             Coast = 200000m,
                             DateOfCreation = new DateTime(2015, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -181,7 +181,7 @@ namespace Internship.Migrations
                         },
                         new
                         {
-                            Id = new Guid("40ef80eb-4afb-4ad4-a011-db033c3a4684"),
+                            Id = new Guid("28f03a22-537a-4e05-9a7b-d095ac017967"),
                             AuthorId = new Guid("1395039e-c3d8-4afb-811e-6a69ab3245bd"),
                             Coast = 500000m,
                             DateOfCreation = new DateTime(2015, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -235,7 +235,7 @@ namespace Internship.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6217cf4e-1a74-465d-bcb3-487ff4ecc2f7"),
+                            Id = new Guid("e7fac413-61b1-40a0-a30d-499abcf6582e"),
                             AuthorId = new Guid("ac898bde-ecc6-43c1-8f4b-a0d54dc17d47"),
                             Coast = 10000m,
                             DateOfCreation = new DateTime(2017, 1, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -245,7 +245,7 @@ namespace Internship.Migrations
                         },
                         new
                         {
-                            Id = new Guid("bad5a440-4428-4ec2-822a-4a11d010e086"),
+                            Id = new Guid("1a6a68be-3643-49d6-b4a0-f04c393323ef"),
                             AuthorId = new Guid("b5f39d3b-4b8f-454b-8d20-a28be6271a40"),
                             Coast = 5000m,
                             DateOfCreation = new DateTime(2020, 9, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),

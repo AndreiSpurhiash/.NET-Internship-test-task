@@ -72,3 +72,89 @@ C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship
 C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship\obj\Debug\net6.0\Internship.pdb
 C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship\obj\Debug\net6.0\Internship.genruntimeconfig.cache
 C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship\obj\Debug\net6.0\ref\Internship.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\appsettings.json
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Internship.exe
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Internship.deps.json
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Internship.runtimeconfig.json
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Internship.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Internship.pdb
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Autofac.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Humanizer.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\IbanNet.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\IbanNet.DependencyInjection.Autofac.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Npgsql.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.csproj.AssemblyReference.cache
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.AssemblyInfoInputs.cache
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.AssemblyInfo.cs
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.csproj.CoreCompileInputs.cache
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\scopedcss\bundle\Internship.styles.css
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.csproj.CopyComplete
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\refint\Internship.dll
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.pdb
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.genruntimeconfig.cache
+C:\Users\iv.haidzel\Downloads\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\ref\Internship.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\appsettings.json
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Internship.exe
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Internship.deps.json
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Internship.runtimeconfig.json
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Internship.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Internship.pdb
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Autofac.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Humanizer.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\IbanNet.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\IbanNet.DependencyInjection.Autofac.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Npgsql.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.csproj.AssemblyReference.cache
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.AssemblyInfoInputs.cache
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.AssemblyInfo.cs
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.csproj.CoreCompileInputs.cache
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\scopedcss\bundle\Internship.styles.css
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.csproj.CopyComplete
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\refint\Internship.dll
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.pdb
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\Internship.genruntimeconfig.cache
+C:\Users\andre\Downloads\NET-Internship-test-task-main (2)\NET-Internship-test-task-main (2)\.NET-Internship-test-task-main\Internship\obj\Debug\net6.0\ref\Internship.dll

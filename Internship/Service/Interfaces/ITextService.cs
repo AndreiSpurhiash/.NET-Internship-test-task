@@ -4,6 +4,6 @@ namespace Internship.Service.Interfaces
 {
     public interface ITextService
     {
-        public Task<IEnumerable<Photo>> GetListAsync();
+        public Task<IEnumerable<PhotoModel>> GetListAsync();
     }
 }

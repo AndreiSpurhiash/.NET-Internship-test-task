@@ -1,6 +1,9 @@
-﻿namespace Internship.Service.Entity
+﻿using Internship.Contracts.Entity;
+using Internship.Cotracts.Entity;
+
+namespace Internship.Service.Entity
 {
-    public class Author
+    public class AuthorModel: IAuthor
     {
         public Guid Id { get; set; }
         public string FirstName { get; set; }
@@ -8,7 +11,5 @@
         public string NickName { get; set; }
         public DateTime DateOfBirth { get; set; }
         public DateTime DateOfRegistration { get; set; }
-        public ICollection<Photo> Photos { get; set; } = new List<Photo>();
-        public ICollection<Text> Texts { get; set; } = new List<Text>();
     }
 }

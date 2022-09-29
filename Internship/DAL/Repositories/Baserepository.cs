@@ -26,10 +26,16 @@ namespace Internship.DAL.Repositories
             db.Set<TEntity>().Remove(entity);
         }
 
-        TEntity IBaseRepository<TEntity>.GetID(Guid id)
+        public async Task<TEntity> GetAsync(Guid id)
         {
-            return db.Set<TEntity>().Find(id);
+            return await db.Set<TEntity>().FindAsync(id).ConfigureAwait(false);
         }
+
+        public virtual async Task<IEnumerable<TEntity>> GetListAsync()
+        {
+            return await db.Set<TEntity>().ToListAsync().ConfigureAwait(false);
+        }
+
         public void Save()
         {
             db.SaveChanges();

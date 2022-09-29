@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "glwnTDZ0wMh89sfqu1PwoqNVJEuAX+671htzkSivIfGPjx7Sy6Cjci4XxpB6d9kc8SLJWqLDzTyHVO6ZYdpk3g==",
+  "dgSpecHash": "2UH/SIGcgyVAwfcDjPnUUQa66J/NvrGi0ZggTxG69E0CQBT2K8T0aAeYQxdtZECFpoH7TQOAUH6tIpZ5h/arZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\source\\repos\\AndreiSpurhiash\\.NET-Internship-test-task\\Internship\\Internship.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\ibannet\\5.6.1\\ibannet.5.6.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\ibannet.dependencyinjection.autofac\\5.6.1\\ibannet.dependencyinjection.autofac.5.6.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.9\\microsoft.entityframeworkcore.6.0.9.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.9\\microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.9\\microsoft.entityframeworkcore.analyzers.6.0.9.nupkg.sha512",
