@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Internship.Cotracts.Entity;
+using Internship.DAL.Interfaces;
 using Internship.DAL.Repositories;
 using Internship.Domain.Entity;
 using Internship.Migrations;
@@ -14,9 +15,9 @@ namespace Internship.Service.Implementations
         readonly DbContext db;
 
         private readonly IMapper _mapper;
-        private readonly AuthorRepository _authorRepository;
+        private readonly IAuthorRepository _authorRepository;
 
-        public AuthorService(IMapper mapper, AuthorRepository authorRepository)
+        public AuthorService(IMapper mapper, IAuthorRepository authorRepository)
         {
             _mapper = mapper;
             _authorRepository = authorRepository;

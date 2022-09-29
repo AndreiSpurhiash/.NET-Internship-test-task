@@ -17,8 +17,8 @@ namespace Internship
             builder.RegisterIbanNet();
 
             builder.RegisterType<PhotoStockContext>().As<DbContext>().AsSelf().InstancePerLifetimeScope();
-            
-            builder.RegisterType<AuthorRepository>().As<IAuthorRepository>();
+
+            builder.RegisterType<AuthorRepository>().As<BaseRepository<Author>, IAuthorRepository>();
             builder.RegisterType<AuthorService>().As<IAuthorService>();
 
             builder.RegisterType<PhotoRepository>().As<BaseRepository<Photo>>();
