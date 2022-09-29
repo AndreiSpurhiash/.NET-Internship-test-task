@@ -1,6 +1,8 @@
-﻿namespace Internship.DAL.Interfaces
+﻿using Internship.Domain.Entity;
+
+namespace Internship.DAL.Interfaces
 {
-    public interface IAuthorRepository
+    public interface IAuthorRepository : IBaseRepository<Author>
     {
         public IEnumerable<string> GetEntitiesList();
     }

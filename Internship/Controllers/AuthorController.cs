@@ -1,4 +1,5 @@
 using Internship.Contracts.Entity;
+using Internship.Service.Implementations;
 using Internship.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,16 +21,18 @@ namespace Internship.Controllers
             _photoService = photoService;
         }
 
-        [HttpGet(Name = "GetPhotos")]
-        public async Task<IEnumerable<IPhoto>> GetAsync()
-        {
-            return await _photoService.GetListAsync().ConfigureAwait(false);
-        }
-
-        [HttpGet(Name = "GetEntities")]
-        public IEnumerable<string> Get()
+        [HttpGet]
+        [Route("entities")]
+        public IEnumerable<string> GetEntities()
         {
             return _authorService.GetEntitiesList();
+        }
+
+        [HttpGet]
+        [Route("photos")]
+        public async Task<IEnumerable<IPhoto>> GetPhotos()
+        {
+            return await _photoService.GetListAsync().ConfigureAwait(false);
         }
     }
 }

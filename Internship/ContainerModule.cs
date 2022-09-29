@@ -6,6 +6,7 @@ using Internship.Domain.Entity;
 using Internship.Service.Interfaces;
 using Internship.Service.Implementations;
 using Microsoft.EntityFrameworkCore;
+using Internship.DAL.Interfaces;
 
 namespace Internship
 {
@@ -17,7 +18,7 @@ namespace Internship
 
             builder.RegisterType<PhotoStockContext>().As<DbContext>().AsSelf().InstancePerLifetimeScope();
             
-            builder.RegisterType<AuthorRepository>().As<BaseRepository<Author>>();
+            builder.RegisterType<AuthorRepository>().As<IAuthorRepository>();
             builder.RegisterType<AuthorService>().As<IAuthorService>();
 
             builder.RegisterType<PhotoRepository>().As<BaseRepository<Photo>>();

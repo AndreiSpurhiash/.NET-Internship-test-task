@@ -1,6 +1,6 @@
 ﻿namespace Internship.DAL.Interfaces
 {
-    interface IBaseRepository<TEntity> 
+    public interface IBaseRepository<TEntity> 
         where TEntity : class
     {
         void Create(TEntity entity);
