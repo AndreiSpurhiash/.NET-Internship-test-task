@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2UH/SIGcgyVAwfcDjPnUUQa66J/NvrGi0ZggTxG69E0CQBT2K8T0aAeYQxdtZECFpoH7TQOAUH6tIpZ5h/arZQ==",
+  "dgSpecHash": "96i3jp/P+T/S1XNuGUuRQWWBI7fEJQjJNPmyZa7cu1LIJnUlSjex0mrmaC39Izx6ReOZzCQPIBEiNuDJ80R9qQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\source\\repos\\AndreiSpurhiash\\.NET-Internship-test-task\\Internship\\Internship.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\andre\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\csvhelper\\28.0.1\\csvhelper.28.0.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\ibannet\\5.6.1\\ibannet.5.6.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\ibannet.dependencyinjection.autofac\\5.6.1\\ibannet.dependencyinjection.autofac.5.6.1.nupkg.sha512",
