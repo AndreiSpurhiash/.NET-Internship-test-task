@@ -7,6 +7,6 @@ namespace Internship.Service.Interfaces
     {
         public Task<IEnumerable<PhotoModel>> GetListAsync();
         Task<PhotoModel> GetPhotoByIDAsync(Guid id);
-        public void CreateCVS();
+        Task CreateCVSAsync();
     }
 }

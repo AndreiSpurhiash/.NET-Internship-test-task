@@ -12,7 +12,6 @@ namespace Internship.Service.Implementations
 {
     public class AuthorService : IAuthorService
     {
-        readonly DbContext db;
 
         private readonly IMapper _mapper;
         private readonly IAuthorRepository _authorRepository;

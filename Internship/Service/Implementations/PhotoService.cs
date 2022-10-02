@@ -24,23 +24,19 @@ namespace Internship.Service.Implementations
             _photoRepository = photoRepository;
         }
 
-        public  void CreateCVS()
+        public async Task CreateCVSAsync()
         {
-            var photoss = _photoRepository.GetListAsync().ConfigureAwait(false);
+            var photos = await _photoRepository.GetListAsync().ConfigureAwait(false);
 
-            string path = @"C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship\photosCSV.csv";
-          
-            using (var photosCSV = new StreamWriter(path, false, Encoding.GetEncoding("utf-16")))
+            string path = Environment.CurrentDirectory + @"\photos.csv";
+
+            using (var photosCSV = new StreamWriter(path, false, Encoding.GetEncoding("utf-8")))
             {
-                var csvConfig = new CsvConfiguration(CultureInfo.GetCultureInfo("en-US"));
+                using (var csv = new CsvWriter(photosCSV, new CsvConfiguration(CultureInfo.InvariantCulture) { Delimiter = "\t" }))
                 {
-                    csvConfig.HasHeaderRecord = true;
-                    csvConfig.Delimiter = " ";
-                };
 
-                using (var csv = new CsvWriter(photosCSV, csvConfig))
-                {
-                    csv.WriteRecords( _mapper.Map<IEnumerable<PhotoModel>>(photoss));
+                    var photosModels = _mapper.Map<IEnumerable<PhotoModel>>(photos);
+                    csv.WriteRecords(photosModels);
                 }
             }
         }

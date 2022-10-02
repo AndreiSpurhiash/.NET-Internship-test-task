@@ -45,17 +45,17 @@ namespace Internship.Controllers
         }
 
         [HttpGet]
-        [Route("GetPhotoById")]
-        public async Task<IPhoto> GetPhotoByIDAsync(Guid id)
+        [Route("GetPhotoById/{id:guid}")]
+        public async Task<IPhoto> GetPhotoByIDAsync([FromRoute] Guid id)
         {
-            return await _photoService.GetPhotoByIDAsync(Guid.Parse(input: Console.ReadLine())).ConfigureAwait(false);
+            return await _photoService.GetPhotoByIDAsync(id).ConfigureAwait(false);
         }
 
         [HttpGet]
         [Route("CSV")]
-        public void GetCSV()
+        public async Task GetCSVAsync()
         {
-            _photoService.CreateCVS();
+            await _photoService.CreateCVSAsync().ConfigureAwait(false);
         }
     }
 }
