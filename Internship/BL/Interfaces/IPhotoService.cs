@@ -10,5 +10,6 @@ namespace Internship.Service.Interfaces
         Task<PhotoModel> GetPhotoByIDAsync(Guid id);
         Task CreateCVSAsync();
         Task Update(PhotoModel photoModel);
+        Task AddRaitingPhotoAsync(Guid id, int rating);
     }
 }

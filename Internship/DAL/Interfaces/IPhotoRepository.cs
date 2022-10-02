@@ -8,5 +8,6 @@ namespace Internship.DAL.Interfaces
     {
         Task<Photo> GetPhotoByIdAsync(Guid id);
         Task<IEnumerable<Photo>> GetListAsync();
+        Task AddRaitingPhotoAsync(Guid id, int rating);
     }
 }

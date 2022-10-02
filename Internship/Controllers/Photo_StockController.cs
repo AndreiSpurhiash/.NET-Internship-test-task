@@ -74,5 +74,12 @@ namespace Internship.Controllers
             var text = _mapper.Map<TextModel>(textModel);
             await _textService.CreateText(text).ConfigureAwait(false);
         }
+
+        [HttpPut]
+        [Route("AddRatingPhoto/{id:guid}")]
+        public async Task AddRatingPhotoAsync([FromRoute] Guid id, int rating)
+        {
+            await _photoService.AddRaitingPhotoAsync(id, rating).ConfigureAwait(false);
+        }
     }
 }

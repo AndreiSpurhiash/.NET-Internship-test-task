@@ -26,5 +26,14 @@ namespace Internship.DAL.Repositories
         {
             return await db.Set<Photo>().ToListAsync().ConfigureAwait(false);
         }
+
+        public async Task AddRaitingPhotoAsync(Guid id, int rating)
+        {
+            var photo = await db.Set<Photo>().FindAsync(id).ConfigureAwait(false);
+            photo.NumberOfRaiting = photo.NumberOfRaiting + 1;
+            photo.AmountOfRaiting = photo.AmountOfRaiting + rating;
+            db.Set<Photo>().Update(photo);
+            base.Save();
+        }
     }
 }

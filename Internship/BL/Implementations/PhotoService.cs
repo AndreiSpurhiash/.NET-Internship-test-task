@@ -79,5 +79,10 @@ namespace Internship.Service.Implementations
             var photo = _mapper.Map<Photo>(photoModel);
             await _photoRepository.Update(photo).ConfigureAwait(false);
         }
+
+        public async Task AddRaitingPhotoAsync(Guid id, int rating)
+        {
+            await _photoRepository.AddRaitingPhotoAsync(id, rating).ConfigureAwait(false);
+        }
     }
 }
