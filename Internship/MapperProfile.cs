@@ -38,6 +38,7 @@ namespace Internship
             .ReverseMap();
             CreateMap<Text, TextModel>().ReverseMap();
             CreateMap<PhotoModel, IPhoto>().ReverseMap();
+            CreateMap<TextModel, IText>().ReverseMap();
         }
     }
 }

@@ -82,11 +82,7 @@ namespace Internship.Service.Implementations
 
         public async Task AddRaitingPhotoAsync(Guid id, int rating)
         {
-            if (id == null)
-            {
-                throw new NotFoundException(Localization.GuidNotFound);
-            }
-            if (rating > 5 && rating < 1)
+            if (rating > 5 || rating < 1)
             {
                 throw new NotFoundException(Localization.NotCorrectRating);
             }

@@ -2,7 +2,7 @@ using Internship.Contracts.Entity;
 using Internship.Service.Entity;
 using Internship.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using AutoMapper;
+using System.Net;
 
 namespace Internship.Controllers
 {
@@ -12,15 +12,13 @@ namespace Internship.Controllers
     {
         private readonly IAuthorService _authorService;
         private readonly IPhotoService _photoService;
-        private readonly IMapper _mapper;
         private readonly ITextService _textService;
 
         public Photo_StockController( IAuthorService authorService, IPhotoService photoService,
-            IMapper mapper, ITextService textService)
+            ITextService textService)
         {
             _authorService = authorService;
             _photoService = photoService;
-            _mapper = mapper;
             _textService = textService;
         }
 
@@ -61,18 +59,18 @@ namespace Internship.Controllers
 
         [HttpPut]
         [Route("UpdatePhoto")]
-        public async Task UdatePhoto(IPhoto iphoto)
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task UdatePhoto(PhotoModel photo)
         {
-            var photo = _mapper.Map<PhotoModel>(iphoto);
             await _photoService.Update(photo).ConfigureAwait(false);
         }
 
         [HttpPost]
         [Route("CreateText")]
-        public async Task CreateText(IText textModel)
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task CreateText(TextModel textModel)
         {
-            var text = _mapper.Map<TextModel>(textModel);
-            await _textService.CreateText(text).ConfigureAwait(false);
+            await _textService.CreateText(textModel).ConfigureAwait(false);
         }
 
         [HttpPut]

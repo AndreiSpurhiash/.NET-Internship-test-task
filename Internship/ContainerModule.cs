@@ -14,8 +14,6 @@ namespace Internship
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterIbanNet();
-
             builder.RegisterType<PhotoStockContext>().As<DbContext>().AsSelf().InstancePerLifetimeScope();
 
             builder.RegisterType<AuthorRepository>().As<BaseRepository<Author>, IAuthorRepository>();
