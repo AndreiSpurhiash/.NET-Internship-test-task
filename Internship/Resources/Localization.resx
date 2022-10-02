@@ -118,15 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CsvWriterError" xml:space="preserve">
-    <value>Ошибка выгрузки файла</value>
+    <value>File upload error</value>
   </data>
   <data name="EntityList" xml:space="preserve">
     <value>Entity List is null</value>
   </data>
+  <data name="GuidNotFound" xml:space="preserve">
+    <value>Input corect ID</value>
+  </data>
+  <data name="NotCorrectRating" xml:space="preserve">
+    <value>Raiting is 1-5</value>
+  </data>
   <data name="PhotoListEmpty" xml:space="preserve">
-    <value>Список фото пуст</value>
+    <value>Photo list is empty</value>
   </data>
   <data name="PhotoNotFound" xml:space="preserve">
-    <value>Фото не найдено</value>
+    <value>Photo not found</value>
   </data>
 </root>

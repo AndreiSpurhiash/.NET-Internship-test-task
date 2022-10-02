@@ -61,7 +61,7 @@ namespace Internship.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ошибка выгрузки файла.
+        ///   Looks up a localized string similar to File upload error.
         /// </summary>
         internal static string CsvWriterError {
             get {
@@ -70,7 +70,34 @@ namespace Internship.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Список фото пуст.
+        ///   Looks up a localized string similar to Entity List is null.
+        /// </summary>
+        internal static string EntityList {
+            get {
+                return ResourceManager.GetString("EntityList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Input corect ID.
+        /// </summary>
+        internal static string GuidNotFound {
+            get {
+                return ResourceManager.GetString("GuidNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Raiting is 1-5.
+        /// </summary>
+        internal static string NotCorrectRating {
+            get {
+                return ResourceManager.GetString("NotCorrectRating", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photo list is empty.
         /// </summary>
         internal static string PhotoListEmpty {
             get {
@@ -79,7 +106,7 @@ namespace Internship.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Фото не найдено.
+        ///   Looks up a localized string similar to Photo not found.
         /// </summary>
         internal static string PhotoNotFound {
             get {

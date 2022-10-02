@@ -12,7 +12,6 @@ namespace Internship.Contracts.Entity
         public Guid AuthorId { get; set; }
         public decimal Coast { get; set; }
         public int NumberOfSales { get; set; }
-        public double Raiting { get; set; }
         public string OriginalSize { get; set; }
     }
 }

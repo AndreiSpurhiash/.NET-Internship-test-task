@@ -74,7 +74,7 @@ namespace Internship.Service.Implementations
             return _mapper.Map<PhotoModel>(photo);
         }
 
-        public async Task Update(PhotoModel photoModel)
+        public async Task Update(IPhoto photoModel)
         {
             var photo = _mapper.Map<Photo>(photoModel);
             await _photoRepository.Update(photo).ConfigureAwait(false);
@@ -82,6 +82,14 @@ namespace Internship.Service.Implementations
 
         public async Task AddRaitingPhotoAsync(Guid id, int rating)
         {
+            if (id == null)
+            {
+                throw new NotFoundException(Localization.GuidNotFound);
+            }
+            if (rating > 5 && rating < 1)
+            {
+                throw new NotFoundException(Localization.NotCorrectRating);
+            }
             await _photoRepository.AddRaitingPhotoAsync(id, rating).ConfigureAwait(false);
         }
     }

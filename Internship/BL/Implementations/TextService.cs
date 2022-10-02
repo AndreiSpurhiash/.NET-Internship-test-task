@@ -8,6 +8,7 @@ using CsvHelper.Configuration;
 using CsvHelper;
 using System.Globalization;
 using System.Text;
+using Internship.Contracts.Entity;
 
 namespace Internship.Service.Implementations
 {
@@ -21,7 +22,7 @@ namespace Internship.Service.Implementations
             _mapper = mapper;
             _textRepository = textRepository;
         }
-        public async Task CreateText(TextModel textModel)
+        public async Task CreateText(IText textModel)
         {
             var text = _mapper.Map<Text>(textModel);
             await _textRepository.Create(text).ConfigureAwait(false);
