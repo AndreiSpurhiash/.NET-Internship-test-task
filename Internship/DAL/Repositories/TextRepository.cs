@@ -4,12 +4,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Internship.DAL.Repositories
 {
-    public class TextRepository : BaseRepository<Text>
+    public class TextRepository : BaseRepository<Text>, ITextRepository
     {
         readonly DbContext db;
         public TextRepository(DbContext context) : base(context)
         {
             db = context;
+        }
+
+        public virtual async Task<IEnumerable<Text>> GetListAsync()
+        {
+            return await db.Set<Text>().ToListAsync().ConfigureAwait(false);
         }
     }
 }

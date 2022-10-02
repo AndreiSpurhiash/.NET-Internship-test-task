@@ -51,5 +51,11 @@ namespace Internship.Service.Implementations
             var photo = await _photoRepository.GetPhotoByIdAsync(id).ConfigureAwait(false);
             return _mapper.Map<PhotoModel>(photo);
         }
+
+        public async Task Update(PhotoModel photoModel)
+        {
+            var photo = _mapper.Map<Photo>(photoModel);
+            await _photoRepository.Update(photo).ConfigureAwait(false);
+        }
     }
 }

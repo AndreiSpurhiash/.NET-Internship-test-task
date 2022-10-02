@@ -24,7 +24,7 @@ namespace Internship
             builder.RegisterType<PhotoRepository>().As<BaseRepository<Photo>, IPhotoRepository>();
             builder.RegisterType<PhotoService>().As<IPhotoService>();
 
-            builder.RegisterType<TextRepository>().As<BaseRepository<Text>>();
+            builder.RegisterType<TextRepository>().As<BaseRepository<Text>, ITextRepository>();
             builder.RegisterType<TextService>().As<ITextService>();
         }
     }

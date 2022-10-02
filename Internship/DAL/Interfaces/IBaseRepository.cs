@@ -3,8 +3,8 @@
     public interface IBaseRepository<TEntity> 
         where TEntity : class
     {
-        void Create(TEntity entity);
-        void Update(TEntity entity);
+        Task Create(TEntity entity);
+        Task Update(TEntity entity);
         void Delete(TEntity entity);
         void Save();
     }

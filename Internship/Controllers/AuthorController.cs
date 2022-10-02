@@ -11,6 +11,7 @@ using System.Text;
 using CsvHelper;
 using Internship.Domain.Entity;
 using System.Collections.Generic;
+using AutoMapper;
 
 namespace Internship.Controllers
 {
@@ -18,16 +19,18 @@ namespace Internship.Controllers
     [Route("[controller]")]
     public class AuthorController : ControllerBase
     {
-        private readonly ILogger<AuthorController> _logger;
         private readonly IAuthorService _authorService;
         private readonly IPhotoService _photoService;
+        private readonly IMapper _mapper;
+        private readonly ITextService _textService;
 
-        public AuthorController(ILogger<AuthorController> logger, 
-            IAuthorService authorService, IPhotoService photoService)
+        public AuthorController( IAuthorService authorService, IPhotoService photoService,
+            IMapper mapper, ITextService textService)
         {
-            _logger = logger;
             _authorService = authorService;
             _photoService = photoService;
+            _mapper = mapper;
+            _textService = textService;
         }
 
         [HttpGet]
@@ -52,10 +55,33 @@ namespace Internship.Controllers
         }
 
         [HttpGet]
-        [Route("CSV")]
-        public async Task GetCSVAsync()
+        [Route("CSVPhotos")]
+        public async Task GetCSVPhotosAsync()
         {
             await _photoService.CreateCVSAsync().ConfigureAwait(false);
+        }
+
+        [HttpGet]
+        [Route("CSVTexts")]
+        public async Task GetCSVTextsAsync()
+        {
+            await _textService.CreateCVSAsync().ConfigureAwait(false);
+        }
+
+        [HttpGet]
+        [Route("UpdatePhoto")]
+        public async Task UdatePhoto(IPhoto iphoto)
+        {
+            var photo = _mapper.Map<PhotoModel>(iphoto);
+            await _photoService.Update(photo).ConfigureAwait(false);
+        }
+
+        [HttpGet]
+        [Route("CreateText")]
+        public async Task CreateText(IText textModel)
+        {
+            var text = _mapper.Map<TextModel>(textModel);
+            await _textService.CreateText(text).ConfigureAwait(false);
         }
     }
 }

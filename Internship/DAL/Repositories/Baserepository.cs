@@ -11,12 +11,12 @@ namespace Internship.DAL.Repositories
         {
             db = context;
         }
-        public void Create(TEntity entity)
+        public async Task Create(TEntity entity)
         {
             db.Set<TEntity>().Add(entity);
         }
 
-        public void Update(TEntity entity)
+        public async Task Update(TEntity entity)
         {
             db.Entry(entity).State = EntityState.Modified;
         }
