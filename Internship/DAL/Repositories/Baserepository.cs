@@ -26,7 +26,7 @@ namespace Internship.DAL.Repositories
             db.Set<TEntity>().Remove(entity);
         }
 
-        public void Save()
+        public async Task Save()
         {
             db.SaveChanges();
         }

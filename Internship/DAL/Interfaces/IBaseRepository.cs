@@ -6,6 +6,6 @@
         Task Create(TEntity entity);
         Task Update(TEntity entity);
         void Delete(TEntity entity);
-        void Save();
+        Task Save();
     }
 }

@@ -10,7 +10,7 @@ namespace Internship
     {
         public MapperProfile()
         {
-            CreateMap<Author, AuthorModel>();
+            CreateMap<Author, AuthorModel>().ReverseMap();
             CreateMap<Photo, PhotoModel>()
              .ForMember(p => p.Id, o => o.MapFrom(s => s.Id))
              .ForMember(p => p.Name, o => o.MapFrom(s => s.Name))

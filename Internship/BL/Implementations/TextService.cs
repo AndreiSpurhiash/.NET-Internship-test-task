@@ -22,10 +22,11 @@ namespace Internship.Service.Implementations
             _mapper = mapper;
             _textRepository = textRepository;
         }
-        public async Task CreateText(IText textModel)
+        public async Task CreateText(TextModel textModel)
         {
             var text = _mapper.Map<Text>(textModel);
             await _textRepository.Create(text).ConfigureAwait(false);
+            _textRepository.Save();
         }
 
         public async Task CreateCVSAsync()
@@ -43,6 +44,11 @@ namespace Internship.Service.Implementations
                     csv.WriteRecords(textsModels);
                 }
             }
+        }
+
+        public async Task SaveAsync()
+        {
+            await _textRepository.Save().ConfigureAwait(false);
         }
     }
 }

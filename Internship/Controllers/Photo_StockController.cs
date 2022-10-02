@@ -24,60 +24,75 @@ namespace Internship.Controllers
 
         [HttpGet]
         [Route("GetEntities")]
-        public IEnumerable<string> GetEntities()
+        [ProducesResponseType(typeof(IEnumerable<string>), (int)HttpStatusCode.OK)]
+        public IActionResult GetEntities()
         {
-            return _authorService.GetEntitiesList();
+            var result = _authorService.GetEntitiesList();
+            return Ok(result);
         }
 
         [HttpGet]
         [Route("GetListPhotos")]
-        public async Task<IEnumerable<IPhoto>> GetPhotos()
+        [ProducesResponseType(typeof(IEnumerable<IPhoto>), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GetPhotos()
         {
-            return await _photoService.GetListAsync().ConfigureAwait(false);
+            var result = await _photoService.GetListAsync().ConfigureAwait(false);
+            return Ok(result);
         }
 
         [HttpGet]
         [Route("GetPhotoById/{id:guid}")]
-        public async Task<IPhoto> GetPhotoByIDAsync([FromRoute] Guid id)
+        [ProducesResponseType(typeof(IPhoto), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GetPhotoByIDAsync([FromRoute] Guid id)
         {
-            return await _photoService.GetPhotoByIDAsync(id).ConfigureAwait(false);
+            var result = await _photoService.GetPhotoByIDAsync(id).ConfigureAwait(false);
+            return Ok(result);
         }
 
         [HttpGet]
         [Route("CSVPhotos")]
-        public async Task GetCSVPhotosAsync()
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<IActionResult> SaveCSVPhotosAsync()
         {
             await _photoService.CreateCVSAsync().ConfigureAwait(false);
+            return Ok();
         }
 
         [HttpGet]
         [Route("CSVTexts")]
-        public async Task GetCSVTextsAsync()
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<IActionResult> SaveCSVTextsAsync()
         {
             await _textService.CreateCVSAsync().ConfigureAwait(false);
+            return Ok();
         }
 
         [HttpPut]
         [Route("UpdatePhoto")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
-        public async Task UdatePhoto(PhotoModel photo)
+        public async Task<IActionResult> UdatePhoto(PhotoModel photo)
         {
             await _photoService.Update(photo).ConfigureAwait(false);
+            return Ok();
         }
 
         [HttpPost]
         [Route("CreateText")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
-        public async Task CreateText(TextModel textModel)
+        public async Task<IActionResult> CreateText(TextModel textModel)
         {
             await _textService.CreateText(textModel).ConfigureAwait(false);
+            await _textService.SaveAsync().ConfigureAwait(false);
+            return Ok();
         }
 
         [HttpPut]
         [Route("AddRatingPhoto/{id:guid}")]
-        public async Task AddRatingPhotoAsync([FromRoute] Guid id, int rating)
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<IActionResult> AddRatingPhotoAsync([FromRoute] Guid id, int rating)
         {
             await _photoService.AddRaitingPhotoAsync(id, rating).ConfigureAwait(false);
+            return Ok();
         }
     }
 }
