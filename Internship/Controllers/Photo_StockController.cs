@@ -59,7 +59,7 @@ namespace Internship.Controllers
             await _textService.CreateCVSAsync().ConfigureAwait(false);
         }
 
-        [HttpGet]
+        [HttpPut]
         [Route("UpdatePhoto")]
         public async Task UdatePhoto(IPhoto iphoto)
         {
@@ -67,7 +67,7 @@ namespace Internship.Controllers
             await _photoService.Update(photo).ConfigureAwait(false);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("CreateText")]
         public async Task CreateText(IText textModel)
         {
