@@ -1,30 +1,21 @@
-using CsvHelper.Configuration;
 using Internship.Contracts.Entity;
 using Internship.Service.Entity;
-using Internship.Service.Implementations;
 using Internship.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Net.Http.Headers;
-using System.Diagnostics;
-using System.Globalization;
-using System.Text;
-using CsvHelper;
-using Internship.Domain.Entity;
-using System.Collections.Generic;
 using AutoMapper;
 
 namespace Internship.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AuthorController : ControllerBase
+    public class Photo_StockController : ControllerBase
     {
         private readonly IAuthorService _authorService;
         private readonly IPhotoService _photoService;
         private readonly IMapper _mapper;
         private readonly ITextService _textService;
 
-        public AuthorController( IAuthorService authorService, IPhotoService photoService,
+        public Photo_StockController( IAuthorService authorService, IPhotoService photoService,
             IMapper mapper, ITextService textService)
         {
             _authorService = authorService;

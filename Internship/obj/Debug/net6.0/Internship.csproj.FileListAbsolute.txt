@@ -165,3 +165,5 @@ C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship
 C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship\bin\Debug\net6.0\IbanNet.dll
 C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship\bin\Debug\net6.0\IbanNet.DependencyInjection.Autofac.dll
 C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship\bin\Debug\net6.0\CsvHelper.dll
+C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship\obj\Debug\net6.0\Internship.Resources.Localization.resources
+C:\Users\andre\source\repos\AndreiSpurhiash\.NET-Internship-test-task\Internship\obj\Debug\net6.0\Internship.csproj.GenerateResource.cache

@@ -10,6 +10,8 @@ using Internship.Service.Interfaces;
 using System.Globalization;
 using System.Text;
 using System.Collections.Generic;
+using Internship.Exceptions;
+using Internship.Resources;
 
 namespace Internship.Service.Implementations
 {
@@ -17,38 +19,58 @@ namespace Internship.Service.Implementations
     {
         private readonly IMapper _mapper;
         private readonly IPhotoRepository _photoRepository;
+        private readonly ILogger _logger;
 
-        public PhotoService(IMapper mapper, IPhotoRepository photoRepository)
+        public PhotoService(IMapper mapper, IPhotoRepository photoRepository, ILogger logger)
         {
             _mapper = mapper;
             _photoRepository = photoRepository;
+            _logger = logger;
         }
 
         public async Task CreateCVSAsync()
         {
             var photos = await _photoRepository.GetListAsync().ConfigureAwait(false);
-
-            string path = Environment.CurrentDirectory + @"\photos.csv";
-
-            using (var photosCSV = new StreamWriter(path, false, Encoding.GetEncoding("utf-8")))
+           
+            if (!photos.Any())
             {
-                using (var csv = new CsvWriter(photosCSV, new CsvConfiguration(CultureInfo.InvariantCulture) { Delimiter = "\t" }))
-                {
+                throw new NotFoundException(Localization.PhotoListEmpty);
+            }
 
-                    var photosModels = _mapper.Map<IEnumerable<PhotoModel>>(photos);
-                    csv.WriteRecords(photosModels);
+            try
+            {
+                string path = Environment.CurrentDirectory + @"\photos.csv";
+                using (var photosCSV = new StreamWriter(path, false, Encoding.GetEncoding("utf-8")))
+                {
+                    using (var csv = new CsvWriter(photosCSV, new CsvConfiguration(CultureInfo.InvariantCulture) { Delimiter = "\t" }))
+                    {
+                        var photosModels = _mapper.Map<IEnumerable<PhotoModel>>(photos);
+                        csv.WriteRecords(photosModels);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                new BadRequestException(Localization.CsvWriterError);
             }
         }
 
         public async Task<IEnumerable<PhotoModel>> GetListAsync()
         {
             var photos = await _photoRepository.GetListAsync().ConfigureAwait(false);
+            if (!photos.Any())
+            {
+                throw new NotFoundException(Localization.PhotoListEmpty);
+            }
             return _mapper.Map<IEnumerable<PhotoModel>>(photos);
         }
         public async Task<PhotoModel> GetPhotoByIDAsync(Guid id)
         {
             var photo = await _photoRepository.GetPhotoByIdAsync(id).ConfigureAwait(false);
+            if (photo == null)
+            {
+                throw new NotFoundException(Localization.PhotoNotFound);
+            }
             return _mapper.Map<PhotoModel>(photo);
         }
 

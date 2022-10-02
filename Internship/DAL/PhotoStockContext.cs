@@ -41,8 +41,9 @@ namespace Internship.DAL
                 entity.Property(x => x.DateOfCreation).HasColumnName(@"DateOfCreation").HasColumnType("date").IsRequired();
                 entity.Property(x => x.Coast).HasColumnName(@"Coast").HasColumnType("decimal").IsRequired();
                 entity.Property(x => x.NumberOfSales).HasColumnName(@"NumberOfSales").HasColumnType("int").IsRequired();
-                entity.Property(x => x.Raiting).HasColumnName(@"Raiting").HasColumnType("float8").IsRequired();
                 entity.Property(x => x.OriginalSize).HasColumnName(@"OriginalSize").HasColumnType("text").IsRequired();
+                entity.Property(x => x.NumberOfRaiting).HasColumnName(@"NumberOfRaiting").HasColumnType("int");
+                entity.Property(x => x.AmountOfRaiting).HasColumnName(@"AmountOfRaiting").HasColumnType("int");
 
                 entity.HasOne(a => a.Author).WithMany(b => b.Photos).HasForeignKey(c => c.AuthorId).OnDelete(DeleteBehavior.Cascade);
             });

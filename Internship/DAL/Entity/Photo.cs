@@ -12,8 +12,9 @@ namespace Internship.Domain.Entity
         public Guid AuthorId { get; set; }
         public decimal Coast { get; set; }
         public int NumberOfSales { get; set; }
-        public double Raiting { get; set; }
         public string OriginalSize { get; set; }
+        public int NumberOfRaiting { get; set; }
+        public int AmountOfRaiting { get; set; }
 
         public Photo(string name, string link, DateTime dateOfCreation, Guid authorId,
             decimal coast, int numberOfSales, string originalSize)

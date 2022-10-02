@@ -1,6 +1,9 @@
-﻿using Internship.DAL.Interfaces;
+﻿using Internship.Contracts.Entity;
+using Internship.DAL.Interfaces;
 using Internship.Domain.Entity;
+using Internship.Exceptions;
 using Internship.Migrations;
+using Internship.Resources;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
 

@@ -3,6 +3,7 @@ using System;
 using Internship.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Internship.Migrations
 {
     [DbContext(typeof(PhotoStockContext))]
-    partial class PhotoStockContextModelSnapshot : ModelSnapshot
+    [Migration("20221002095350_raiting")]
+    partial class raiting
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -111,6 +113,10 @@ namespace Internship.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("Id");
 
+                    b.Property<int>("AmountOfRaiting")
+                        .HasColumnType("int")
+                        .HasColumnName("AmountOfRaiting");
+
                     b.Property<Guid>("AuthorId")
                         .HasColumnType("uuid");
 
@@ -132,6 +138,10 @@ namespace Internship.Migrations
                         .HasColumnType("text")
                         .HasColumnName("Name");
 
+                    b.Property<int>("NumberOfRaiting")
+                        .HasColumnType("int")
+                        .HasColumnName("NumberOfRaiting");
+
                     b.Property<int>("NumberOfSales")
                         .HasColumnType("int")
                         .HasColumnName("NumberOfSales");
@@ -140,10 +150,6 @@ namespace Internship.Migrations
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("OriginalSize");
-
-                    b.Property<double>("Raiting")
-                        .HasColumnType("float8")
-                        .HasColumnName("Raiting");
 
                     b.HasKey("Id")
                         .HasName("Id1");
@@ -155,39 +161,42 @@ namespace Internship.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("60386695-9fed-4807-981c-cb0b0c774b14"),
+                            Id = new Guid("1c9b0c4e-8c81-4664-91dc-2e10c54f1e2f"),
+                            AmountOfRaiting = 0,
                             AuthorId = new Guid("14d5363b-0889-4b3d-aaa7-f456d7b0f195"),
                             Coast = 100000m,
                             DateOfCreation = new DateTime(2010, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Link = "en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)#/media/File:Vincent_Willem_van_Gogh_127.jpg",
                             Name = "Sunflowers",
+                            NumberOfRaiting = 0,
                             NumberOfSales = 5,
-                            OriginalSize = "100x100",
-                            Raiting = 0.0
+                            OriginalSize = "100x100"
                         },
                         new
                         {
-                            Id = new Guid("8836d2cd-e88f-49fd-afab-f0947982d8d0"),
+                            Id = new Guid("ba571bd4-8757-45e2-aabb-d0da36979fbd"),
+                            AmountOfRaiting = 0,
                             AuthorId = new Guid("f51cccd8-4c11-4c96-aff3-24b1b4922de7"),
                             Coast = 200000m,
                             DateOfCreation = new DateTime(2015, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Link = "en.wikipedia.org/wiki/Isaac_Isra%C3%ABls#/media/File:Isaac_Israels_-_Donkeyride.jpg",
                             Name = "Riding Donkeys on the Beach",
+                            NumberOfRaiting = 0,
                             NumberOfSales = 10,
-                            OriginalSize = "1000x1000",
-                            Raiting = 0.0
+                            OriginalSize = "1000x1000"
                         },
                         new
                         {
-                            Id = new Guid("28f03a22-537a-4e05-9a7b-d095ac017967"),
+                            Id = new Guid("743acd26-a04b-42d8-99ff-baa5427b6121"),
+                            AmountOfRaiting = 0,
                             AuthorId = new Guid("1395039e-c3d8-4afb-811e-6a69ab3245bd"),
                             Coast = 500000m,
                             DateOfCreation = new DateTime(2015, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Link = "en.wikipedia.org/wiki/Portrait_of_a_Wounded_KNIL_Soldier#/media/File:Gewonde_KNIL-militair_door_Isaac_Israels.jpg",
                             Name = "Gewonde KNIL-militair door",
+                            NumberOfRaiting = 0,
                             NumberOfSales = 2,
-                            OriginalSize = "1000x1500",
-                            Raiting = 0.0
+                            OriginalSize = "1000x1500"
                         });
                 });
 
@@ -233,7 +242,7 @@ namespace Internship.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("e7fac413-61b1-40a0-a30d-499abcf6582e"),
+                            Id = new Guid("5b199da0-c1ce-4638-9b58-e6e46fdbac88"),
                             AuthorId = new Guid("ac898bde-ecc6-43c1-8f4b-a0d54dc17d47"),
                             Coast = 10000m,
                             DateOfCreation = new DateTime(2017, 1, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -243,7 +252,7 @@ namespace Internship.Migrations
                         },
                         new
                         {
-                            Id = new Guid("1a6a68be-3643-49d6-b4a0-f04c393323ef"),
+                            Id = new Guid("7cfd5aac-7ddd-491b-8602-c4543ab3bab1"),
                             AuthorId = new Guid("b5f39d3b-4b8f-454b-8d20-a28be6271a40"),
                             Coast = 5000m,
                             DateOfCreation = new DateTime(2020, 9, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
