@@ -14,7 +14,7 @@ namespace Internship.DAL.Repositories
 
         public virtual async Task<IEnumerable<Text>> GetListAsync()
         {
-            return await db.Set<Text>().ToListAsync().ConfigureAwait(false);
+            return await db.Set<Text>().Include(av => av.Author).ToListAsync().ConfigureAwait(false);
         }
     }
 }

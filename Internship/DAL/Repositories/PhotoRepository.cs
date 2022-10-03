@@ -24,7 +24,7 @@ namespace Internship.DAL.Repositories
 
         public virtual async Task<IEnumerable<Photo>> GetListAsync()
         {
-            return await db.Set<Photo>().ToListAsync().ConfigureAwait(false);
+            return await db.Set<Photo>().Include(av => av.Author).ToListAsync().ConfigureAwait(false);
         }
 
         public async Task AddRaitingPhotoAsync(Guid id, int rating)
