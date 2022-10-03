@@ -7,7 +7,6 @@ namespace Internship.Service.Interfaces
     public interface ITextService
     {
         public Task CreateText(TextModel textModel);
-        Task CreateCVSAsync();
-        Task SaveAsync();   
+        Task CreateCVSAsync();  
     }
 }

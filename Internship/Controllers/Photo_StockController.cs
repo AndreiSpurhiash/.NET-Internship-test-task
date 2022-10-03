@@ -82,7 +82,6 @@ namespace Internship.Controllers
         public async Task<IActionResult> CreateText(TextModel textModel)
         {
             await _textService.CreateText(textModel).ConfigureAwait(false);
-            await _textService.SaveAsync().ConfigureAwait(false);
             return Ok();
         }
 
