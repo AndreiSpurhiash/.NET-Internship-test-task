@@ -19,7 +19,7 @@ namespace Internship.DAL.Repositories
 
         public async Task<Photo> GetPhotoByIdAsync(Guid id)
         {
-            return await db.Set<Photo>().FindAsync(id).ConfigureAwait(false);
+            return await db.Set<Photo>().Include(p => p.Author).FirstOrDefaultAsync(p => p.Id == id).ConfigureAwait(false);
         }
 
         public virtual async Task<IEnumerable<Photo>> GetListAsync()
